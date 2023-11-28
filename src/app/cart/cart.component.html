@@ -1,1 +1,75 @@
-<p>cart works!</p>
+<app-header></app-header>
+<!-- cart without items -->
+<div style="height: 100vh;"class="d-flex justify-content-center align-items-center w-100">
+    <div class="div">
+      <img   class="img-fluid" src="https://w7.pngwing.com/pngs/377/837/png-transparent-empty-cart-illustration-thumbnail.png" alt="">
+      <div class="text-center">
+            <h1 class="text-danger">Your Cart is empty</h1>
+            <a class="btn btn-success" routerLink="">Add more Items</a>
+      </div >
+    </div>
+  </div>
+  
+
+  <!-- cart with items -->
+
+  <section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+       <div class="row">
+         <div class="col-lg-8">
+            <h2>Cart Summary</h2>
+            <table class=" table shadow mt-3">
+             <thead>
+              <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td style="width:250px">asdfghjjkl</td>
+                <td><img height="100px" width="100px" src="" alt=""></td>
+                <td>
+                  <div class="d-flex">
+                    <button class="btn fw-bolder fs-2">-</button>
+                    <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem;" readonly>
+                    <button class="btn fw-bolder fs-2">+</button>
+
+                  </div>
+                </td>
+                <td>$300</td>
+                <td>
+                  <button class="btn fs-4"><i class="fa-solid fa-trash text-danger"></i></button>
+                </td>
+              </tr>
+            </tbody>
+             
+            </table>
+
+            <div class="d-flex justify-content-end">
+             <button class="btn btn-warning me-2">Empty cart</button>
+             <a routerLink="" class="btn btn-success"> shop more</a>
+            </div>
+         </div>
+         <div class="col-lg-4">
+            <div class=" rounded p-3">
+               <h4>Sub Total: <b class="text-danger">$1000</b></h4>
+               <hr>
+               <div class=" d-grid">
+                <a routerLink="/user/checkout" class=" btn btn-primary">Checkout</a>
+               </div>
+            </div>
+         </div>
+       </div>
+    </div>
+
+  </section>
+
+
+
+  <app-footer></app-footer>

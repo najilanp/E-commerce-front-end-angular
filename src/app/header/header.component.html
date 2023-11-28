@@ -1,5 +1,5 @@
  <!-- Navigation-->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <nav style="z-index: 1;" class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 ">
     <div class="container-fluid px-4 px-lg-5">
         <a class="navbar-brand" routerLink="">
             <i class="fa-solid fa-cart-flatbed fa-beat-fade"></i>
@@ -13,19 +13,19 @@
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <button class="btn btn-outline-dark me-3 ms-4" type="submit">
+                    <button routerLink="/user/login" class="btn btn-outline-dark me-3 ms-4" type="submit">
                         <i class="fa-solid fa-user"></i>
                         Login
                     </button>
                 </li>
-                <button class="btn btn-outline-dark me-3" type="submit">
-                    <i class="fa-solid fa-heart"></i>
+                <button routerLink="/wishlist" class="btn btn-outline-dark me-3" type="submit">
+                    <i class="fa-solid fa-heart text-danger"></i>
                     Wishlist
                     <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                 </button>
                 <li class="nav-item">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                    <button routerLink="/cart" class="btn btn-outline-dark" type="submit">
+                        <i class="fa-solid fa-cart-shopping text-success"></i>
                         Cart
                         <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
                     </button>
